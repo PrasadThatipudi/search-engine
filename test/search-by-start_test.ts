@@ -1,6 +1,6 @@
 import { describe, it } from "@std/testing/bdd";
 import { assertEquals } from "@std/assert";
-import { searchByStart } from "../src/search-by-start.js";
+import { searchByStart } from "../src/search-by-start.ts";
 
 describe("searchByStart", () => {
   it("should return an empty array for an empty array", () => {
