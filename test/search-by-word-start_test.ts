@@ -25,4 +25,12 @@ describe("searchByWordStart", () => {
     assertEquals(result1, ["Test1", "test2"]);
     assertEquals(result2, ["Test1", "test2"]);
   });
+
+  it("should return items that any word starts with the given string", () => {
+    const result = searchByWordStart(
+      ["test1 example", "example test2", "test3"],
+      "test",
+    );
+    assertEquals(result, ["test1 example", "example test2", "test3"]);
+  });
 });
